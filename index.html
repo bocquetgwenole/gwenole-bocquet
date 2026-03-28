@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gwenolé Bocquet — Research / Publications</title>
-  <meta name="description" content="Research notes and technical documents on optimal transport, gravity, and GKSL." />
+  <meta name="description" content="Research figures, notes, and technical documents on GKSL gravity, optimal transport, Einstein-locked readout, geometric readout, holonomy, and certified spacetime structure." />
   <style>
     :root {
       --bg: #ffffff;
@@ -14,7 +14,9 @@
       --link: #0b57d0;
       --max: 900px;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -22,46 +24,108 @@
       color: var(--text);
       line-height: 1.6;
     }
+
     .wrap {
       max-width: var(--max);
       margin: 0 auto;
       padding: 32px 20px 80px;
     }
+
     h1, h2, h3 { line-height: 1.2; }
-    h1 { margin-bottom: 8px; font-size: 2rem; }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 2rem;
+    }
+
     h2 {
       margin-top: 40px;
       padding-top: 18px;
       border-top: 1px solid var(--line);
       font-size: 1.4rem;
     }
+
     p, li { font-size: 1rem; }
-    .subtitle, .muted { color: var(--muted); }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+
+    .subtitle,
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .links {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
       margin: 18px 0 8px;
     }
+
     .card {
       border: 1px solid var(--line);
       border-radius: 10px;
       padding: 16px;
       margin: 14px 0;
+      background: #fff;
     }
+
     .pub-title {
       font-size: 1.06rem;
       font-weight: bold;
       margin-bottom: 8px;
     }
+
     .keywords {
       color: var(--muted);
       font-size: 0.95rem;
       margin-top: 8px;
     }
-    ul { padding-left: 22px; }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .figure-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    .figure-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      margin: 14px 0;
+      background: #fff;
+    }
+
+    .figure-card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 12px 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .fig-caption {
+      margin-top: 8px;
+      color: var(--text);
+    }
+
+    .fig-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -70,15 +134,17 @@
       <h1>Gwenolé Bocquet</h1>
       <p class="subtitle">Researcher — optimal transport, gravity, GKSL</p>
       <p>
-        This page gathers my recent technical notes and research documents.
+        This page gathers my recent technical notes, publications, and research figures.
         The current work focuses on optimal transport, gravity-related structures,
-        and GKSL-type frameworks.
+        GKSL-type open-system dynamics, certified geometric readout, local holonomy,
+        and Einstein-locked readout frameworks.
       </p>
       <div class="links">
         <a href="https://zenodo.org/search?page=1&size=20&q=Gwenol%C3%A9+Bocquet" target="_blank" rel="noopener noreferrer">Zenodo profile</a>
         <a href="https://orcid.org/0009-0008-0215-8844" target="_blank" rel="noopener noreferrer">ORCID</a>
         <a href="mailto:gwenole.bocquet@ieee.org">gwenole.bocquet@ieee.org</a>
         <a href="#publications">Publications</a>
+        <a href="#figures">Figures</a>
       </div>
     </header>
 
@@ -88,9 +154,82 @@
         Researcher developing a technical corpus at the intersection of optimal transport,
         gravity-related geometric readout, and GKSL-type open-system dynamics. The recent documents
         develop a structured program around certified geometric readout, coherence-dependent gravitational
-        sourcing, reduced-sector nonlinear dynamics, and constitutive-holonomic constraints. This page
-        provides an entry point to the main papers and to the broader set of technical notes.
+        sourcing, reduced-sector nonlinear dynamics, constitutive-holonomic constraints, and local readout geometry.
+        This page provides an entry point to the main papers, technical notes, and selected figures.
       </p>
+    </section>
+
+    <section id="figures">
+      <h2>Figures</h2>
+      <p>
+        Selected research figures related to <strong>GKSL gravity</strong>,
+        <strong>optimal transport</strong>, geometric readout, local holonomy,
+        and certified readout-window structure.
+      </p>
+
+      <div class="figure-grid">
+
+        <article class="figure-card">
+          <div class="pub-title">Figure 1 — Native OT/GKSL state manifold</div>
+          <img
+            src="images/figure1_ot_landscape_only.png"
+            alt="Native OT and GKSL state manifold with density operator, local readout patch, GKSL flow, and holonomy."
+          />
+          <p class="fig-caption">
+            Schematic native OT/GKSL state-manifold representation with a density operator,
+            a local readout patch, GKSL flow, and holonomy on an optimal-transport state space.
+          </p>
+          <div class="fig-meta">
+            Keywords: GKSL gravity, optimal transport, OT/Wasserstein state space, state manifold, local readout patch, holonomy
+          </div>
+        </article>
+
+        <article class="figure-card">
+          <div class="pub-title">Figure 2 — Local geometric readout from a native state patch</div>
+          <img
+            src="images/figure2_geometric_readout_drawing_only.png"
+            alt="Local geometric readout reconstructed from a native optimal-transport state patch through GKSL selection and a local frame."
+          />
+          <p class="fig-caption">
+            Local geometric readout reconstructed from a native optimal-transport state patch,
+            via GKSL selection and a local frame.
+          </p>
+          <div class="fig-meta">
+            Keywords: GKSL gravity, optimal transport, geometric readout, decoherence, local frame, OT state manifold
+          </div>
+        </article>
+
+        <article class="figure-card">
+          <div class="pub-title">Figure 3 — Local holonomy on a native OT/Wasserstein state patch</div>
+          <img
+            src="images/figure3_holonomy_patch_drawing_only.png"
+            alt="Local holonomy on a native OT and Wasserstein state patch with a holonomy loop and nontrivial return of local orientation."
+          />
+          <p class="fig-caption">
+            Schematic local holonomy on a native OT/Wasserstein state patch,
+            illustrating the nontrivial return of local orientation around a closed loop.
+          </p>
+          <div class="fig-meta">
+            Keywords: GKSL gravity, optimal transport, holonomy, OT/Wasserstein state manifold, local readout geometry
+          </div>
+        </article>
+
+        <article class="figure-card">
+          <div class="pub-title">Figure 4 — Certified readout window on the native state manifold</div>
+          <img
+            src="images/figure4_readout_window_3d_drawing_only.png"
+            alt="Certified readout window on a native OT and Wasserstein state manifold with a certified region and readout boundary."
+          />
+          <p class="fig-caption">
+            Certified readout-window structure on the native state manifold, showing a readout window,
+            a certified region, and a readout boundary.
+          </p>
+          <div class="fig-meta">
+            Keywords: GKSL gravity, optimal transport, certified readout window, readout boundary, OT/Wasserstein manifold
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section id="publications">
