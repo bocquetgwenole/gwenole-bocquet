@@ -1,161 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gwenolé Bocquet — Research / Publications</title>
-  <meta name="description" content="Research figures, notes, and technical documents on GKSL gravity, optimal transport, Einstein-locked readout, geometric readout, holonomy, and certified spacetime structure." />
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #666666;
-      --line: #e5e5e5;
-      --link: #0b57d0;
-      --max: 900px;
-    }
+<header>
+  <h1>Gwenolé Bocquet</h1>
+  <p class="subtitle">Researcher — optimal transport, gravity, GKSL</p>
 
-    * { box-sizing: border-box; }
+  <p class="lead">
+    This page presents a certified-domain OT/GKSL theory of state-to-readout structure.
+    The framework is formulated natively on optimal-transport/GKSL state-space dynamics,
+    reconstructs classical geometry only as a certified readout layer, enforces an
+    Einstein lock on the kinetic gravitational sector, contains exact reduced nonlinear
+    equations on certified sectors, a nonlinear Einstein-locked closure of the readout
+    metric block, theorem-level certified-boundary results, and an explicit low-energy
+    operational test branch.
+  </p>
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 32px 20px 80px;
-    }
-
-    h1, h2, h3 { line-height: 1.2; }
-
-    h1 {
-      margin-bottom: 8px;
-      font-size: 2rem;
-    }
-
-    h2 {
-      margin-top: 40px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      font-size: 1.4rem;
-    }
-
-    p, li { font-size: 1rem; }
-
-    .subtitle,
-    .muted {
-      color: var(--muted);
-    }
-
-    .lead {
-      font-size: 1.05rem;
-      max-width: 820px;
-      margin: 14px 0 0;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin: 18px 0 8px;
-    }
-
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 16px;
-      margin: 14px 0;
-      background: #fff;
-    }
-
-    .pub-title {
-      font-size: 1.06rem;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .keywords {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-top: 8px;
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-
-    .figure-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 22px;
-    }
-
-    .figure-card {
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 16px;
-      margin: 14px 0;
-      background: #fff;
-    }
-
-    .figure-card img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 12px 0;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fafafa;
-    }
-
-    .fig-caption {
-      margin-top: 8px;
-      color: var(--text);
-    }
-
-    .fig-meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-top: 8px;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <h1>Gwenolé Bocquet</h1>
-      <p class="subtitle">Researcher — optimal transport, gravity, GKSL</p>
-
-      <p class="lead">
-        This page presents a research  on certified geometric readout from native
-        OT/GKSL state dynamics, with emphasis on Einstein-locked gravitational closure,
-        local holonomy, finite certified readout domains, and low-energy testability of
-        source-side constitutive effects.
-      </p>
-
-      <div class="links">
-        <a href="https://zenodo.org/search?page=1&size=20&q=Gwenol%C3%A9+Bocquet" target="_blank" rel="noopener noreferrer">Zenodo archive</a>
-        <a href="https://orcid.org/0009-0008-0215-8844" target="_blank" rel="noopener noreferrer">ORCID</a>
-        <a href="mailto:gwenole.bocquet@ieee.org">Contact</a>
-        <a href="#framework">Framework</a>
-        <a href="#figures">Figures</a>
-        <a href="#publications">Publications</a>
-      </div>
-    </header>
+  <div class="links">
+    <a href="https://zenodo.org/search?page=1&size=20&q=Gwenol%C3%A9+Bocquet" target="_blank" rel="noopener noreferrer">Publication archive</a>
+    <a href="https://orcid.org/0009-0008-0215-8844" target="_blank" rel="noopener noreferrer">ORCID</a>
+    <a href="mailto:gwenole.bocquet@ieee.org">Contact</a>
+    <a href="#framework">Framework</a>
+    <a href="#figures">Figures</a>
+    <a href="#publications">Publications</a>
+  </div>
+</header>
 
 <section>
   <h2>About</h2>
@@ -163,13 +28,14 @@
     This site presents a unified theoretical corpus at the intersection of optimal transport,
     GKSL open-system dynamics, certified geometric readout, Einstein-locked gravitational closure,
     temporal certification, spacetime-readout solvability, and causal-local semantics. The framework
-    is not introduced as a weak-field ansatz added to general relativity, nor as an open-ended
-    emergence narrative, but as a closed certified-domain architecture with a fixed native ontology,
-    explicit structural locks, exact reduced dynamics on certified sectors, controlled recovery
-    regimes, and low-energy falsifiable consequences.
+    is not a weak-field ansatz appended to general relativity, nor an open-ended emergence narrative,
+    but a closed certified-domain theory with a fixed native ontology, explicit structural locks,
+    exact reduced dynamics on certified sectors, nonlinear Einstein-locked readout closure,
+    controlled recovery regimes, theorem-level certification results, and low-energy falsifiable consequences.
   </p>
 </section>
-    <section id="framework">
+
+<section id="framework">
   <h2>Framework</h2>
 
   <p>
@@ -202,7 +68,7 @@
   </p>
 
   <p>
-    The corpus now contains several logically distinct but internally connected layers. At native
+    The theory now contains several logically distinct but internally connected layers. At native
     level, it provides OT/GKSL dynamics on effective state space. On certified reduced sectors, it
     provides exact nonlinear reduced equations rather than phenomenological weak-field approximations.
     On the readout side, it provides a nonlinear Einstein-locked closure of the reconstructed metric
@@ -221,7 +87,7 @@
   </p>
 
   <p>
-    Beyond the architectural layer, the corpus now includes physically nontrivial source-side outputs.
+    Beyond the foundational architecture, the theory already yields physically nontrivial source-side outputs.
     In the reduced constitutive-holonomic sector, theorem-level results establish nontrivial stationary
     branches, a positive reduced effective mass scale, and a vacuum-like residual sourcing term, with
     Einstein-locked lifting into the source/response closure and without modification of the kinetic
